@@ -1,9 +1,13 @@
-name: CICD
+name: Azure Web Apps CI/CD
 
 on:
   push:
-    branches: [main,master]
-    
+    branches:
+      - main
+  pull_request:
+    branches-ignore:
+      - main
+
 jobs:
   build:
     runs-on: [ubuntu-latest]
@@ -15,6 +19,6 @@ jobs:
         with:
           node-version: 16.x
       - name: Install Dependencies
-        run : npm install
+        run: npm install
       - name: Test Project
         run: npm test
