@@ -1,0 +1,5 @@
+{
+  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"],
+  "appService.defaultWebAppToDeploy": "/subscriptions/a0ade5f7-9e0f-4255-bf60-a72265fd8d30/resourceGroups/hyte-international_group/providers/Microsoft.Web/sites/azure-sample-node-app",
+  "appService.deploySubpath": "."
+}
